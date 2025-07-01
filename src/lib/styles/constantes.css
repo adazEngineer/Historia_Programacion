@@ -1,0 +1,21 @@
+:root {
+
+    --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  
+    --tamanio-titulo: 3rem;
+    --tamanio-subtitulo: 2rem;
+    --tamanio-texto: 1.5rem;
+  
+    --color-principal: #1a759f;
+    --color-secundario: #99d98c;
+
+    --color-fondo-principal: #242424;
+    --color-fondo-secundario: #242424;
+    
+    --color-texto-principal: #ffffff;
+    --color-texto-secundario: #ffffff;  
+
+    --border-radius: 8px;
+  
+}
+
