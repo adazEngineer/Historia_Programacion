@@ -128,7 +128,23 @@ export const personajesStore = writable<PersonajeModel[]>([
     "Estadounidense", 
     "Fue un científico computacional estadounidense conocido por crear el lenguaje de programación C y por ser uno de los desarrolladores del sistema operativo Unix. Su trabajo sentó las bases de gran parte del software moderno, ya que C influyó en muchos lenguajes posteriores y Unix en los sistemas operativos actuales como Linux y macOS.",
     "https://s3.amazonaws.com/media.thecrimson.com/photos/2013/05/27/213905_1288084.jpg"
-  ), 
+  ),
+  new PersonajeModel(14,
+    "1947-02-08", 
+    "Aun Esta Vivo con 78 años", 
+    "Gerald Jay Sussman", 
+    "Estadounidense", 
+    "Es catedrático de Ingeniería Eléctrica del Instituto Tecnológico de Massachusetts. Se licenció y doctoró en matemáticas en el MIT en 1968 y 1973 respectivamente. Ha participado en la investigación sobre inteligencia artificial en el MIT desde 1964",
+    "https://i.ytimg.com/vi/Tdwr9tweTDE/maxresdefault.jpg"
+  ),
+  new PersonajeModel(14,
+    "1954-10-02", 
+    "Aun Esta Vivo con 71 años", 
+    "Guy L. Steele Jr.", 
+    "Estadounidense", 
+    "Es un destacado científico de la computación estadounidense, conocido por su trabajo en el diseño de lenguajes de programación. Fue co-creador de Scheme (junto a Gerald Jay Sussman) y participó en el desarrollo de otros lenguajes importantes como Java y Common Lisp. También es reconocido por su claridad en la escritura técnica y por contribuir a los estándares de varios lenguajes.",
+    "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT_Ywoq1EYce2xGqPhaVwSJcvAsY9oUu3Z7B1Mb5hM6vgdVN5Vo"
+  )
 ]);
 
 export const seleccionarPersonaje = (IdPersonajes: number[]): void => {
