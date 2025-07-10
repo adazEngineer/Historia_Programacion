@@ -14,7 +14,7 @@
     <p class="txt-texto">{$eventoSeleccionado.Descripcion}</p>
 
     {:else}
-        <p class="txt-texto">Selecciona un evento</p>
+        <h2 class="txt-texto">Bienvenidos a la linea del tiempo de la programación, por favor, seleccione una fecha para ver su informacion</h2>
     {/if}
 </section>
 
