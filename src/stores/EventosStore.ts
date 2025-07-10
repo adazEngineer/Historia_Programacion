@@ -16,7 +16,7 @@ export const eventosStore = writable<EventoModel[]>([
   new EventoModel(2, 
     "1936", 
     "La máquina de Turing", 
-    "Alan Turing publica su concepto de una máquina teórica capaz de ejecutar cualquier algoritmo computable.", 
+    "Es un modelo teórico de computación que permite simular cualquier algoritmo mediante una estructura simple pero poderosa. Consiste en una cinta dividida en celdas, un cabezal que puede leer y escribir símbolos, y un conjunto de reglas que determinan cómo actúa según el estado y el contenido de la cinta. Este sistema puede ejecutar operaciones paso a paso, resolviendo problemas lógicos o matemáticos, y sirve como base conceptual para entender cómo funcionan los ordenadores modernos.", 
     "https://proyectoidis.org/wp-content/uploads/1936/08/Front-of-a-bombe-code-breaking-machine-at-Bletchley-Park.jpg", 
     [2]),
 
@@ -86,7 +86,7 @@ export const eventosStore = writable<EventoModel[]>([
   new EventoModel(12,
     "1970", 
     "Algol-W y Pascal", 
-    "desarrolló el lenguaje de programación Pascal, inspirado en Algol-W, una versión previa que él mismo ayudó a crear. Pascal fue diseñado para enseñar buenas prácticas de programación estructurada y se convirtió en un lenguaje muy popular en la educación y el desarrollo de software en los años 70 y 80. Su claridad y estructura influyeron en muchos lenguajes posteriores",
+    "Desarrolló el lenguaje de programación Pascal, inspirado en Algol-W, una versión previa que él mismo ayudó a crear. Pascal fue diseñado para enseñar buenas prácticas de programación estructurada y se convirtió en un lenguaje muy popular en la educación y el desarrollo de software en los años 70 y 80. Su claridad y estructura influyeron en muchos lenguajes posteriores",
     "https://imagenes.montevideo.com.uy/imgnoticias/202401/_W933_80/867825.jpg", 
   [12]),
 
@@ -94,7 +94,7 @@ export const eventosStore = writable<EventoModel[]>([
     "1972", 
     "Lenguaje C", 
     "Desarrolló el lenguaje de programación C en los laboratorios Bell. Fue diseñado para escribir sistemas operativos, especialmente UNIX, y ofrecía un equilibrio entre eficiencia y control del hardware. C se convirtió en uno de los lenguajes más influyentes de la historia, sirviendo como base para muchos otros lenguajes modernos como C++, Java y Python.",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfp7hATdDCDeYHvfoftifg2HmInGLsV0srw&s", 
+    "https://msmk.university/wp-content/uploads/2025/05/1366_2000.jpg", 
   [13]),
 
   new EventoModel(14,

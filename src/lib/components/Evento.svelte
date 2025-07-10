@@ -22,6 +22,7 @@
     .cont-evento {
         display: flex;
         flex-direction: column;
+        text-align: justify;
         gap: 1rem;
         width: 50%;
         padding: 1rem;
@@ -32,6 +33,8 @@
 
     .img{
         width: 80%;
+        max-height: 400px;
+        object-fit: contain;
         border-radius: 8px;
     }
 
