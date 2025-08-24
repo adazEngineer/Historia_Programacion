@@ -3,6 +3,11 @@ import { PersonajeModel } from '../models/PersonajeModel';
 
 export const personajeSeleccionado = writable<PersonajeModel[]>([]);
 
+export const seleccionarPersonaje = (IdPersonajes: number[]): void => {
+  const personaje: PersonajeModel[] = get(personajesStore);
+  personajeSeleccionado.set(personaje.filter(personaje => IdPersonajes.includes(personaje.IdPersonaje)));
+};
+
 export const personajesStore = writable<PersonajeModel[]>([
   new PersonajeModel(1, 
     "1815-12-10", 
@@ -332,7 +337,3 @@ new PersonajeModel(31,
 
 ]);
 
-export const seleccionarPersonaje = (IdPersonajes: number[]): void => {
-  const personaje: PersonajeModel[] = get(personajesStore);
-  personajeSeleccionado.set(personaje.filter(personaje => IdPersonajes.includes(personaje.IdPersonaje)));
-};

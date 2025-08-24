@@ -1,17 +1,17 @@
 <script lang="ts">
-  import { eventoSeleccionado } from "../../stores/EventosStore";
+    import { eventoSeleccionado } from "../../stores/EventosStore";
 </script>
 
 <section class="cont-evento">
     {#if $eventoSeleccionado}
-    <div class="cont-titulo">
-        <h3 class="txt-subtitulo">{$eventoSeleccionado.Fecha}</h3>
-        <hr>
-        <h3 class="txt-subtitulo">{$eventoSeleccionado.Titulo}</h3>
-    </div>
+        <div class="cont-titulo">
+            <h3 class="txt-subtitulo">{$eventoSeleccionado.Fecha}</h3>
+            <hr>
+            <h3 class="txt-subtitulo">{$eventoSeleccionado.Titulo}</h3>
+        </div>
 
-    <img class="img" src="{$eventoSeleccionado.Imagen}" alt="{$eventoSeleccionado.Titulo}">
-    <p class="txt-texto">{$eventoSeleccionado.Descripcion}</p>
+        <img class="img" src="{$eventoSeleccionado.Imagen}" alt="{$eventoSeleccionado.Titulo}">
+        <p class="txt-texto">{$eventoSeleccionado.Descripcion}</p>
 
     {:else}
         <h2 class="txt-texto">Bienvenidos a la linea del tiempo de la programación, por favor, seleccione una fecha para ver su informacion</h2>

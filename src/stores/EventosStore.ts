@@ -6,6 +6,15 @@ import { seleccionarPersonaje } from './PersonajesStore';
 
 export const eventoSeleccionado = writable<EventoModel | undefined>(undefined);
 
+export const seleccionarEvento = (idEvento: number): void => {
+  const eventos = get(eventosStore);
+  const evento = eventos.find(evento => evento.IdEvento === idEvento);
+  if (evento) {
+    seleccionarPersonaje(evento.IdPersonajes);
+    eventoSeleccionado.set(evento);
+  }
+}
+
 export const eventosStore = writable<EventoModel[]>([
   new EventoModel(1, 
     "1843", 
@@ -257,11 +266,3 @@ export const eventosStore = writable<EventoModel[]>([
 
 ]);
 
-export const seleccionarEvento = (idEvento: number): void => {
-  const eventos = get(eventosStore);
-  const evento = eventos.find(evento => evento.IdEvento === idEvento);
-  if (evento) {
-    seleccionarPersonaje(evento.IdPersonajes);
-    eventoSeleccionado.set(evento);
-  }
-};
